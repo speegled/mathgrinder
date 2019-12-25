@@ -26,7 +26,7 @@ body::after {
 
 .problems-container {
     display: grid;
-    grid-template: 50% 50% / 50% 50%;
+    grid-template: 47.5% 47.5% 5% / 50% 50%;
     height: 100vh;
 }
 
@@ -52,6 +52,10 @@ body::after {
     grid-area: 2/2/3/3;
     background-color: lime;
     opacity: 0.4;
+}
+
+.textblock {
+    grid-area: 3/1/4/3;
 }
 
 .heading {
@@ -111,4 +115,10 @@ p {
     color: white;
     text-shadow: 
     0 1px 0 #ccc;
+}
+
+.text-input {
+    font-size: 23.11px;
+    margin-top: 1px;
+    margin-bottom: 0px;
 }
