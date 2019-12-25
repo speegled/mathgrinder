@@ -1,16 +1,56 @@
 body {
-    background-color: #444;
+    background: linear-gradient(white, black);
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
-h1{
-    font-size: 70px;
+body::after {
+    content: "";
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    opacity: 0.06;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 70px;
+    height: 100vh;
+}
+
+.heading {
+    grid-row: 1/2;
+}
+
+h1 {
+    margin: 0;
+    padding-top: 10px;
+    font-size: 120px;
     font-weight: bolder;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(54, 54, 54);
     text-align: center;
 }
 
-.button{
+.heading2 {
+    grid-row: 2/3;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(54, 54, 54);
+    text-align: center;
+}
+
+.button {
+    grid-row: 3/4;
     display:block;
     margin:100px auto 0;
     width:200px;
@@ -25,12 +65,19 @@ h1{
     transition:all 300ms ease-in-out;
     outline: none;
 }
-.button:hover{
+.button:hover {
     box-shadow:0px 30px 7px -20px rgba(0,0,0,0.5);
     transform:translate(0px, -15px);
     background-color:black;
 }
 
+.exp-text {
+    grid-row: 4/5;
+}
+
 p {
     text-align: center;
+    color: white;
+    text-shadow: 
+    0 1px 0 #ccc
 }
