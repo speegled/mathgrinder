@@ -3,7 +3,11 @@ var current_string = "";
 var game_started = false;
 
 var type_texts = [
-    "This is a test", "Hello friends", "qwertyuiop", "Here is something really really long so that I can see what it does when it does not fit the screen"
+    "This is a test",
+    "Hello friends",
+    "qwertyuiop",
+    "Here is something really really long so that I can see what it does when it does not fit the screen",
+    "Quite indeed"
 ]
 
 var questions = [
@@ -28,7 +32,7 @@ var questions = [
 /*literally looked everywhere on the internet
  *could not find a better way to do this*/
 
-function parseKey(key_press){
+function parseKey(key_press, shift_key){
     //right
     if(key_press == 39 && current_div == 1){
         current_div = 2;
@@ -94,6 +98,36 @@ function parseKey(key_press){
         current_string += String.fromCharCode(key_press);
         $(".input-message").css("color", "#ddd");
     }
+    //comma
+    else if(key_press == 188){
+        current_string += ",";
+        $(".input-message").css("color", "#ddd");
+    }
+    //dash
+    else if(key_press == 189){
+        current_string += "-";
+        $(".input-message").css("color", "#ddd");
+    }
+    //period
+    else if(key_press == 190){
+        current_string += ".";
+        $(".input-message").css("color", "#ddd");
+    }
+    //forward slash
+    else if(key_press == 191){
+        current_string += "/";
+        $(".input-message").css("color", "#ddd");
+    }
+    //single quote
+    else if(key_press == 222 && shift_key == false){
+        current_string += "'";
+        $(".input-message").css("color", "#ddd");
+    }
+    //double quote
+    else if(key_press == 222 && shift_key == true){
+        current_string += "\"";
+        $(".input-message").css("color", "#ddd");
+    }
     //space
     else if(key_press == 32){
         current_string += " ";
@@ -132,6 +166,6 @@ $(document).ready(function(){
         startGame();
     });
     $(document).keydown(function(event){
-        if(game_started === true) parseKey(event.which);
+        if(game_started === true) parseKey(event.which, event.shiftKey);
     });
 })
