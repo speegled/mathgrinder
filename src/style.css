@@ -26,7 +26,7 @@ body::after {
 
 .problems-container {
     display: grid;
-    grid-template: 47.5% 47.5% 5% / 50% 50%;
+    grid-template: 45% 45% 8.5% 1.5% / 50% 50%;
     height: 100vh;
 }
 
@@ -56,6 +56,8 @@ body::after {
 
 .textblock {
     grid-area: 3/1/4/3;
+    word-wrap: break-word;
+    overflow: hidden;
 }
 
 .heading {
@@ -113,12 +115,34 @@ h2 {
 p {
     text-align: center;
     color: white;
+}
+
+.exp-text {
     text-shadow: 
     0 1px 0 #ccc;
 }
 
 .text-input {
     font-size: 23.11px;
-    margin-top: 1px;
+    margin-top: 2px;
     margin-bottom: 0px;
+    color: white;
+    text-shadow: 
+    0 1px 0 #ccc;
+}
+
+.input-message {
+    font-size: 23.11px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    text-align: left;
+    color: #666;
+}
+
+.block3-message {
+    font-size: 40px;
+}
+
+.block3-problem {
+    font-size: 35px;
 }
