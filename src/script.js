@@ -4,6 +4,20 @@ var game_started = false;
 var current_problem4;
 
 var type_texts = [
+    "Howdy.",
+    "Pleased to meet you.",
+    "Hello?",
+    "Greetings.",
+    "Salutations.",
+    "Hello.",
+    "Hi!",
+    "Hey",
+    "Today we have a Jelly Belly Pet Rat Gummi Candy.",
+    "Affirmative",
+    "Nobody knows, the troubles I've seen",
+    "Nobody knows, my sorrow.",
+    "5 plus 5 equals 10.",
+    "e5 is best by test.",
     "This is a test of the intercom system.",
     "Indeed.",
     "How much wood could a woodchuck chuck if a woodchuck could chuck wood?",
@@ -24,7 +38,7 @@ var type_texts = [
     "A module is Noetherian if and only if all of its submodules are finitely generated.",
     "1.e4 e5 2.Nf3?? Ke7!!",
     "Now I will do what others won't, so tomorrow I can do what others can't.",
-    "Cuius rei demonstrationem mirabilem sane detexi hanc marginis exiguitas non caperet. - Pierre de Fermat",
+    "\"Cuius rei demonstrationem mirabilem sane detexi hanc marginis exiguitas non caperet.\" - Pierre de Fermat",
     "Not much of a math game really is it",
     "Koejawel.",
     "Kweper.",
@@ -49,7 +63,23 @@ var type_texts = [
     "That angle",
     "I went on a date with this girl, and her floor was just bean bags.",
     "Soulja boy up in it; watch me crank it, watch me; watch me crank that soulja boy",
-    "I dunno. CAN you go to the bathroom? Can you?"
+    "\"I dunno. CAN you go to the bathroom? Can you?\" - My middle school teacher, Mrs. Trisket",
+    "\"57 is prime.\" - Grothendieck",
+    "\"There are no prime numbers except for 57.\" - Grothendieck",
+    "\"The greatest glory in living lies not in never falling, but in rising every time we fall.\" - Nelson Mandela",
+    "\"The way to get started is to quit talking and begin doing.\" - Walt Disney",
+    "\"If life were predictable it would cease to be life, and be without flavor.\" - Eleanor Roosevelt",
+    "\"It is during our darkest moments that we must focus to see the light.\" - Aristotle",
+    "\"You miss 100% of the shots you don't take.\" - Wayne Gretzky",
+    "\"Whether you think you can or you think you can't, you're right.\" - Henry Ford",
+    "\"Dream big and dare to fail.\" - Norman Vaughan",
+    "\"I didn't fail the test. I just found 100 ways to do it wrong.\" - Benjamin Franklin",
+    "\"Imagine if I had a real weapon.\" - Jax",
+    "\"I would rather die of passion than of boredom.\" - Vincent van Gogh",
+    "\"Dreaming, after all, is a form of planning.\" - Gloria Steinem",
+    "\"I have no special talent. I am only passionately curious.\" - Albert Einstein",
+    "\"Wisely, and slow. They stumble that run fast.\" - William Shakespeare",
+
 ]
 
 var questions = [
@@ -127,6 +157,126 @@ var questions = [
         "question": "The sides of a triangle can be uniquely determined by the measure of its angles.",
         "answer": "false",
         "difficulty": "medium"
+    },
+    {
+        "question": "(7 * 7) mod 4 is equivalent to 1 mod 4.",
+        "answer": "true",
+        "difficulty": "medium"
+    },
+    {
+        "question": "52 + 298 = 340.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "91 is prime.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "133 is prime.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "171 is prime.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "97 is prime.",
+        "answer": "true",
+        "difficulty": "easy"
+    },
+    {
+        "question": "101 is prime.",
+        "answer": "true",
+        "difficulty": "easy"
+    },
+    {
+        "question": "1 is prime.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "0 is prime.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "12 x 24 = 268.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "361 is a square number.",
+        "answer": "true",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The binary representation for 17 (base 10) is 10101.",
+        "answer": "false",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The derivative of sin(2x) is 2sinxcosx.",
+        "answer": "false",
+        "difficulty": "medium"
+    },
+    {
+        "question": "If a function is continuous, it is differentiable.",
+        "answer": "false",
+        "difficulty": "medium"
+    },
+    {
+        "question": "3 x 4 = 12.",
+        "answer": "true",
+        "difficulty": "easy"
+    },
+    {
+        "question": "107 + 789 = 896.",
+        "answer": "true",
+        "difficulty": "easy"
+    },
+    {
+        "question": "4096 is a power of 2.",
+        "answer": "true",
+        "difficulty": "easy"
+    },
+    {
+        "question": "There are 3 prime numbers between 8 and 16.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "186 is divisible by 7.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "279 is divisible by 3.",
+        "answer": "true",
+        "difficulty": "easy"
+    },
+    {
+        "question": "3, 5, and 7 are the only set of 3 consecutive primes that are 2 apart.",
+        "answer": "true",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The definite integral from 1 to 5 of 3x^2 dx is 126.",
+        "answer": "false",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The definite integral from 1 to 5 of 3x^2 dx is 124.",
+        "answer": "true",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The definite integral from 2 to 5 of 3x^2 dx is 121.",
+        "answer": "true",
+        "difficulty": "hard"
     },
 ]
 
