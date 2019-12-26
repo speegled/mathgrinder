@@ -139,10 +139,34 @@ p {
     color: #666;
 }
 
+.block1-message {
+    font-size: 40px;
+}
+
+.block1-problem {
+    font-size: 35px;
+}
+
+.block2-message {
+    font-size: 40px;
+}
+
+.block2-problem {
+    font-size: 35px;
+}
+
 .block3-message {
     font-size: 40px;
 }
 
 .block3-problem {
+    font-size: 35px;
+}
+
+.block4-message {
+    font-size: 40px;
+}
+
+.block4-problem {
     font-size: 35px;
 }

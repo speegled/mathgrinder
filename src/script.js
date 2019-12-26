@@ -38,25 +38,96 @@ var type_texts = [
     "I really should've made a lorem ipsum dump instead of writing all these myself",
     "Gordon Palmer",
     "I love math!",
+    "I'm thinking \"Loedewiekie Koekie\" is a viable option.",
+    "Squidward will be performing his version of Solitude in E Minor.",
+    "Yeah! E Minor, alright, yeah!",
+    "Spongebob! We're not cavemen -- we have technology.",
+    "Some - T-rex, bohnth, in my yard; can you believe that?",
+    "And so -- of course -- I had to ... clarefully take out this precious bone",
+    "Ok, times up!",
+    "And I dust it off. A ha ha ha",
+    "That angle",
+    "I went on a date with this girl, and her floor was just bean bags.",
+    "Soulja boy up in it; watch me crank it, watch me; watch me crank that soulja boy",
+    "I dunno. CAN you go to the bathroom? Can you?"
 ]
 
 var questions = [
     {
         "question": "4 x 5 = 20.",
-        "answer": "true"
+        "answer": "true",
+        "difficulty": "easy"
     }, 
     {
         "question": "Every commutative ring with one has a maximal ideal.",
-        "answer": "true"
+        "answer": "true",
+        "difficulty": "hard"
     },
     {
         "question": "The square root of 2 is algebraic.",
-        "answer": "true"
+        "answer": "true",
+        "difficulty": "medium"
     },
     {
         "question": "Pi is a rational number.",
-        "answer": "false"
-    }
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The first few digits of pi are 3.141592.",
+        "answer": "true",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The first few digits of pi are 3.141593.",
+        "answer": "false",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The first few digits of pi are 3.14159261.",
+        "answer": "false",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Pi has finitely many digits.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "16 x 11 = 186.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "17 x 7 = 119",
+        "answer": "true",
+        "difficulty": "easy"
+    },
+    {
+        "question": "14 - 42 = -32",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The sum of two prime numbers is even.",
+        "answer": "false",
+        "difficulty": "easy"
+    },
+    {
+        "question": "If the sum of two prime numbers is even, then one of them has to be 2.",
+        "answer": "true",
+        "difficulty": "easy"
+    },
+    {
+        "question": "In the ring of even integers (2Z), 42 is a prime number.",
+        "answer": "true",
+        "difficulty": "hard"
+    },
+    {
+        "question": "The sides of a triangle can be uniquely determined by the measure of its angles.",
+        "answer": "false",
+        "difficulty": "medium"
+    },
 ]
 
 /*literally looked everywhere on the internet
