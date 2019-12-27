@@ -174,18 +174,23 @@ function parseKey(key_press, shift_key){
             if(correct_ans){
                 var index1 = Math.floor((Math.random() * 4));
                 current_operator1 = possible_operators[index1];
-                l_1 = Math.floor((Math.random() * (Math.floor(5 + seconds_played/10)))) + 1;
-                if(current_operator1 == "/"){
-                    f_1 = Math.floor((Math.random()* (Math.floor(5 + seconds_played/10))))*l_1;
+                if(current_operator1 == "+" || current_operator1 == "-"){
+                    f_1 = Math.floor((Math.random() * (Math.floor(40 + seconds_played*5)))) + 1;
+                    l_1 = Math.floor((Math.random() * (Math.floor(40 + seconds_played*5)))) + 1;
+                }
+                else if(current_operator1 == "x"){
+                    f_1 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1;
+                    l_1 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1;
                 }
                 else{
-                    f_1 = Math.floor((Math.random() * (Math.floor(5 + seconds_played/10))));
+                    l_1 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/15)))) + 1;
+                    f_1 = l_1*(Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1);
                 }
                 var c1 = f_1.toString() + " " + current_operator1 + " " + l_1.toString();
                 $(".block1-problem").html(c1);
 
                 var t1 = parseInt($(".timer1").html());
-                t1+=8;
+                t1 += 5;
                 t1.toString();
                 $(".timer1").html(t1);
             }
@@ -208,25 +213,31 @@ function parseKey(key_press, shift_key){
             if(correct_ans){
                 var index2 = Math.floor((Math.random() * 4));
                 current_operator2 = possible_operators[index2];
-                l_2 = Math.floor((Math.random() * (Math.floor(7 + seconds_played/8)))) + 1;
-                if(current_operator2 == "/"){
-                    f_2 = Math.floor((Math.random()* (Math.floor(7 + seconds_played/8))))*l_2;
+                if(current_operator2 == "+" || current_operator2 == "-"){
+                    f_2 = Math.floor((Math.random() * (Math.floor(200 + seconds_played*9)))) + 1;
+                    l_2 = Math.floor((Math.random() * (Math.floor(200 + seconds_played*9)))) + 1;
+                }
+                else if(current_operator2 == "x"){
+                    f_2 = Math.floor((Math.random() * (Math.floor(15 + seconds_played/6)))) + 1;
+                    l_2 = Math.floor((Math.random() * (Math.floor(15 + seconds_played/6)))) + 1;
                 }
                 else{
-                    f_2 = Math.floor((Math.random() * (Math.floor(5 + seconds_played/10))));
+                    l_2 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1;
+                    f_2 = l_2*(Math.floor((Math.random() * (Math.floor(15 + seconds_played/6)))) + 1);
                 }
                 var c2 = f_2.toString() + " " + current_operator2 + " " + l_2.toString();
                 $(".block2-problem").html(c2);
 
                 var t2 = parseInt($(".timer2").html());
-                t2+=15;
+                t2 += 7;
+                t2.toString();
                 $(".timer2").html(t2);
             }
         }
         else if(current_div == 3){
             if($(".block3-problem").html() == current_string){
                 var t3 = parseInt($(".timer3").html());
-                t3+= (12 + Math.floor(current_string.length/15));
+                t3+= (6 + Math.floor(current_string.length/5));
                 $(".timer3").html(t3);
 
                 var index = Math.floor((Math.random() * type_texts.length));
@@ -272,27 +283,47 @@ function startGame(){
 
     var index1 = Math.floor((Math.random() * 4));
     current_operator1 = possible_operators[index1];
-    l_1 = Math.floor((Math.random() * (Math.floor(5 + seconds_played/10)))) + 1;
-    if(current_operator1 == "/"){
-        f_1 = Math.floor((Math.random()* (Math.floor(5 + seconds_played/10))))*l_1;
+    if(current_operator1 == "+" || current_operator1 == "-"){
+        f_1 = Math.floor((Math.random() * (Math.floor(40 + seconds_played*5)))) + 1;
+        l_1 = Math.floor((Math.random() * (Math.floor(40 + seconds_played*5)))) + 1;
+    }
+    else if(current_operator1 == "x"){
+        f_1 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1;
+        l_1 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1;
     }
     else{
-        f_1 = Math.floor((Math.random() * (Math.floor(5 + seconds_played/10))));
+        l_1 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/15)))) + 1;
+        f_1 = l_1*(Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1);
     }
     var c1 = f_1.toString() + " " + current_operator1 + " " + l_1.toString();
     $(".block1-problem").html(c1);
 
+    var t1 = parseInt($(".timer1").html());
+    t1 += 5;
+    t1.toString();
+    $(".timer1").html(t1);
+
     var index2 = Math.floor((Math.random() * 4));
     current_operator2 = possible_operators[index2];
-    l_2 = Math.floor((Math.random() * (Math.floor(7 + seconds_played/8)))) + 1;
-    if(current_operator2 == "/"){
-        f_2 = Math.floor((Math.random()* (Math.floor(7 + seconds_played/8))))*l_2;
+    if(current_operator2 == "+" || current_operator2 == "-"){
+        f_2 = Math.floor((Math.random() * (Math.floor(200 + seconds_played*9)))) + 1;
+        l_2 = Math.floor((Math.random() * (Math.floor(200 + seconds_played*9)))) + 1;
+    }
+    else if(current_operator2 == "x"){
+        f_2 = Math.floor((Math.random() * (Math.floor(15 + seconds_played/6)))) + 1;
+        l_2 = Math.floor((Math.random() * (Math.floor(15 + seconds_played/6)))) + 1;
     }
     else{
-        f_2 = Math.floor((Math.random() * (Math.floor(5 + seconds_played/10))));
+        l_2 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1;
+        f_2 = 1_2*(Math.floor((Math.random() * (Math.floor(15 + seconds_played/6)))) + 1);
     }
     var c2 = f_2.toString() + " " + current_operator2 + " " + l_2.toString();
     $(".block2-problem").html(c2);
+
+    var t2 = parseInt($(".timer2").html());
+    t2 += 7;
+    t2.toString();
+    $(".timer2").html(t2);
 
     var index3 = Math.floor((Math.random() * type_texts.length));
     var c3 = type_texts[index3];
