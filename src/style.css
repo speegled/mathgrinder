@@ -1,7 +1,8 @@
 body {
-    background: linear-gradient(white, black);
+    background: linear-gradient(135deg, #205dc5, #7e1ac6);
     font-family: 'Raleway', sans-serif;
     margin: 0;
+    box-shadow: inset 0 0 10px #0f037b;
 }
 
 body::after {
@@ -69,7 +70,7 @@ h1 {
     padding-top: 10px;
     font-size: 120px;
     font-weight: bolder;
-    color: rgb(54, 54, 54);
+    color: #0f073b;
     text-align: center;
 }
 
@@ -81,7 +82,7 @@ h2 {
     margin-top: 0;
     font-size: 50px;
     font-weight: bold;
-    color: rgb(54, 54, 54);
+    color: #0f073b;
     text-align: center;
 }
 

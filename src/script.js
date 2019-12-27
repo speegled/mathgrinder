@@ -669,7 +669,7 @@ function tick(){
         clearInterval(t);
         alert("You lose.");
         $(".problems-container").hide();
-        $(".start-container").hide();
+        $(".start-container").show();
         game_started = false;
     }
     seconds_played++;
