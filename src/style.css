@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'eliantoregular';
+    src: url('../fonts/elianto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/elianto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background: linear-gradient(135deg, #205dc5, #7e1ac6);
     font-family: 'Raleway', sans-serif;
@@ -63,6 +71,8 @@ body::after {
 
 .heading {
     grid-row: 1/2;
+    font-family: 'eliantoregular';
+    letter-spacing: 11px;
 }
 
 h1 {
@@ -70,19 +80,21 @@ h1 {
     padding-top: 10px;
     font-size: 120px;
     font-weight: bolder;
-    color: #0f073b;
+    color: #0a042c;
     text-align: center;
 }
 
 .heading2 {
     grid-row: 2/3;
+    font-family: 'eliantoregular';
+    word-spacing: -10px;
 }
 
 h2 {
     margin-top: 0;
     font-size: 50px;
     font-weight: bold;
-    color: #0f073b;
+    color: #0a042c;
     text-align: center;
 }
 
