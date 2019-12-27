@@ -191,13 +191,15 @@ p {
     float: right;
     height: 100px;
     width: 100px;
-    border-radius: 50px;
-    background-color: darkcyan;
+    border-radius: 25px;
+    background-color: white;
 }
 
 .ptimer {
+    font-family: "Droid Serif";
     font-size: 40px;
-    font-weight: bold;
+    font-weight: bolder;
     color: black;
-    vertical-align: auto;
+    position: relative;
+    bottom: 11px;
 }
