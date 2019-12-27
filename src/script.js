@@ -608,6 +608,8 @@ function startGame(){
     game_started = true;
     $(".start-container").hide();
     $(".problems-container").show();
+    $("body").css("background", "linear-gradient(white, black)");
+    $("body").css("box-shadow", "none");
 
     var index1 = Math.floor((Math.random() * 4));
     current_operator1 = possible_operators[index1];
@@ -669,6 +671,8 @@ function tick(){
         clearInterval(t);
         alert("You lose.");
         $(".problems-container").hide();
+        $("body").css("background","linear-gradient(135deg, #205dc5, #7e1ac6)");
+        $("body").css("box-shadow", "inset 0 0 10px #0f037b");
         $(".start-container").show();
         game_started = false;
     }
