@@ -315,7 +315,7 @@ function startGame(){
     }
     else{
         l_2 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1;
-        f_2 = 1_2*(Math.floor((Math.random() * (Math.floor(15 + seconds_played/6)))) + 1);
+        f_2 = l_2*(Math.floor((Math.random() * (Math.floor(15 + seconds_played/6)))) + 1);
     }
     var c2 = f_2.toString() + " " + current_operator2 + " " + l_2.toString();
     $(".block2-problem").html(c2);
