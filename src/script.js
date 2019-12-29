@@ -237,7 +237,7 @@ function parseKey(key_press, shift_key){
         else if(current_div == 3){
             if($(".block3-problem").html() == current_string){
                 var t3 = parseInt($(".timer3").html());
-                t3+= (6 + Math.floor(current_string.length/5));
+                t3+= 10;
                 $(".timer3").html(t3);
 
                 var index = Math.floor((Math.random() * type_texts.length));
@@ -249,14 +249,14 @@ function parseKey(key_press, shift_key){
             }
         }
         else if(current_div == 4){
-            if(current_string.toUpperCase() == questions[current_problem4].answer.toUpperCase()){
-                var index = Math.floor((Math.random() * questions.length));
-                var cs = questions[index].question;
+            if($(".block4-problem").html()== long_texts[current_problem4]){
+                var index = Math.floor((Math.random() * long_texts.length));
+                var cs = long_texts[index].question;
                 $(".block4-problem").html(cs);
                 current_problem4 = index;
 
                 var t4 = parseInt($(".timer4").html());
-                t4 += 6;
+                t4 += 20;
                 $(".timer4").html(t4);
             }
             else{
@@ -329,8 +329,8 @@ function startGame(){
     var c3 = type_texts[index3];
     $(".block3-problem").html(c3);
 
-    var index4 = Math.floor((Math.random() * questions.length));
-    var c4 = questions[index4].question;
+    var index4 = Math.floor((Math.random() * long_texts.length));
+    var c4 = long_texts[index4];
     $(".block4-problem").html(c4);
     current_problem4 = index4;
     count_time();
