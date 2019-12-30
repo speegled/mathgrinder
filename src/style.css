@@ -39,10 +39,16 @@ body::after {
     height: 100vh;
 }
 
+.block1-preview {
+    grid-area: 1/1/2/2;
+    background-color: blue;
+    opacity: 1.0;
+}
+
 .block1 {
     grid-area: 1/1/2/2;
     background-color: blue;
-    opacity: 1;
+    opacity: 1.0;
 }
 
 .block2-preview {
@@ -175,7 +181,7 @@ p {
 }
 
 .block1-problem {
-    margin-left: 20px;
+    font-family: "Droid Serif";
     font-size: 55px;
 }
 
@@ -184,6 +190,7 @@ p {
 }
 
 .block2-problem {
+    font-family: "Droid Serif";
     font-size: 55px;
 }
 

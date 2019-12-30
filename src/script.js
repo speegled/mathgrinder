@@ -11,6 +11,7 @@ var f_2;
 var l_2;
 var score = 0;
 
+var block1_hidden = true;
 var block2_hidden = true;
 var block3_hidden = true;
 var block4_hidden = true;
@@ -21,6 +22,8 @@ var possible_operators = ["+", "-", "x", "/"];
  *could not find a better way to do this*/
 
 function parseKey(key_press, shift_key){
+    //game doesn't start until block1 shows
+    if(block1_hidden) return;
     //right
     if(key_press == 39 && current_div == 1){
         if(block2_hidden) return;
@@ -295,7 +298,7 @@ function startGame(){
     score = 0;
     current_string = "";
 
-    $(".timer1").html("10");
+    $(".timer1").html("13");
     $(".timer2").html("40");
     $(".timer3").html("50");
     $(".timer4").html("60");
@@ -307,15 +310,17 @@ function startGame(){
 
     $(".start-container").hide();
     $(".problems-container").show();
-    $(".block1").show();
+    $(".block1").hide();
     $(".block2").hide();
     $(".block3").hide();
     $(".block4").hide();
 
+    $(".preview1-text").html("");
     $(".preview2-text").html("");
     $(".preview3-text").html("");
     $(".preview4-text").html("");
 
+    $(".block1-preview").show();
     $(".block2-preview").show();
     $(".block3-preview").show();
     $(".block4-preview").show();
@@ -341,7 +346,6 @@ function startGame(){
     $(".block1-problem").html(c1);
 
     var t1 = parseInt($(".timer1").html());
-    t1 += 5;
     t1.toString();
     $(".timer1").html(t1);
 
@@ -398,7 +402,20 @@ function tick(){
     t4.toString();
     $(".timer4").html(t4);
 
-    if(seconds_played >= 7 && seconds_played < 10){
+    //Delay for t1?
+
+    if(seconds_played >= 0 && seconds_played < 3){
+        var countdown = (3 - seconds_played).toString();
+        $(".preview1-text").html(countdown);
+    }
+
+    else if(seconds_played == 3){
+        $(".block1-preview").hide();
+        $(".block1").show();
+        block1_hidden = false;
+    }
+
+    else if(seconds_played >= 7 && seconds_played < 10){
         var countdown = (10 - seconds_played).toString();
         $(".preview2-text").html(countdown);
     }
