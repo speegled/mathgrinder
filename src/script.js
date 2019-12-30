@@ -203,6 +203,7 @@ function parseKey(key_press, shift_key){
                 t1.toString();
                 $(".timer1").html(t1);
                 score++;
+                $(".scoretext").html(score.toString());
             }
         }
         else if(current_div == 2){
@@ -243,6 +244,7 @@ function parseKey(key_press, shift_key){
                 t2.toString();
                 $(".timer2").html(t2);
                 score++;
+                $(".scoretext").html(score.toString());
             }
         }
         else if(current_div == 3){
@@ -255,13 +257,14 @@ function parseKey(key_press, shift_key){
                 var cs = type_texts[index];
                 $(".block3-problem").html(cs);
                 score++;
+                $(".scoretext").html(score.toString());
             }
             else{
                 //make something red -- alert user somehow that he messed up
             }
         }
         else if(current_div == 4){
-            if($(".block4-problem").html()== long_texts[current_problem4]){
+            if($(".block4-problem").html() == current_string){
                 var index = Math.floor((Math.random() * long_texts.length));
                 var cs = long_texts[index];
                 $(".block4-problem").html(cs);
@@ -271,6 +274,7 @@ function parseKey(key_press, shift_key){
                 t4 += 60;
                 $(".timer4").html(t4);
                 score++;
+                $(".scoretext").html(score.toString());
             }
             else{
                 //make something red -- alert user somehow that he messed up

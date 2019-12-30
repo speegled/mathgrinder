@@ -116,7 +116,8 @@ var type_texts = [
     "I wanna go HIGHER!",
     "Mathematics is the gate and key to the sciences.",
     "Mamma mia. Here we go again.",
-    "This land is your land; this land is my land."
+    "This land is your land; this land is my land.",
+    "Why was 7 afraid of 8? Induction!"
 ]
 
 var long_texts = [
@@ -177,7 +178,6 @@ var long_texts = [
     "A is average, B is bad, and C is catastrophic.",
     "What's green and has wheels? Grass. I lied about the wheels.",
     "Why didn't Newton discover group theory? He wasn't Abel!",
-    "Why was 7 afraid of 8? Induction!",
     "A topologist playing poker: \"Man, I fold.\"",
     "You should really avoid building FSMs using LaTeX while hiking. Nobody likes Tikz.",
     "Once upon a midnight dreary, while I pondered, weak and weary...",
