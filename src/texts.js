@@ -78,7 +78,6 @@ var type_texts = [
     "Standing in the Hall of Fame!",
     "Exit, light! Enter, night!",
     "Take me back to the night we met",
-    "Break UP with your girlfriend... because I'm bored.",
     "Bevolo got that SAUCE.",
     "They like how we lit now; end up at a friend's house",
     "Yeah, meet me at the london",
@@ -90,7 +89,6 @@ var type_texts = [
     "Here she comes: she's so perfect!",
     "Wise men say: only fools rush in...",
     "I been getting dirty money, Jordan Belfort",
-    "Just dance; it'll be ok. Da da doo doo",
     "In a room feeling antisocial",
     "I'm a dog. I go ham; I'm a hog.",
     "I need some company. I NEED SOME COMPANY!",
@@ -109,9 +107,16 @@ var type_texts = [
     "A proper copper coffee pot.",
     "We surely shall see the sun shine soon.",
     "Three grey geese in green fields grazing.",
-    "The sixth sick Sheik's sixth sheep is sick.",
+    "The sixth Sheik's sixth sheep is sick.",
     "The instinct of an extinct insect stinks.",
-    "Irish wristwatch, Swiss wristwatch."
+    "Irish wristwatch, Swiss wristwatch.",
+    "The black rose shall bloom once more.",
+    "Mozambique here.",
+    "oH he has trouble with the snap...",
+    "I wanna go HIGHER!",
+    "Mathematics is the gate and key to the sciences.",
+    "Mamma mia. Here we go again.",
+    "This land is your land; this land is my land."
 ]
 
 var long_texts = [
@@ -220,5 +225,9 @@ var long_texts = [
     "\"The only way to learn mathematics is to do mathematics.\" - Halmos",
     "\"The essence of mathematics lies in its freedom.\" - Cantor",
     "\"Wherever there is number, there is beauty.\" - Proclus",
-    "Magnificent Michael van Gerwen raises the roof with a 9-darter in a world championship semifinal!"
+    "Magnificent Michael van Gerwen raises the roof with a 9-darter in a world championship semifinal!",
+    "The lob, the jam! Oh, what a monster jam by Deandre Jordan!",
+    "If you don't like that, you don't like NBA Basketball!",
+    "Pass is ... intercepted on the goal line by Malcolm Butler!",
+    "\"Just to be clear, I am not a professional quote maker or anything.\" - aaLewis",
 ]
