@@ -10,6 +10,7 @@ var l_1;
 var f_2;
 var l_2;
 var score = 0;
+var mode;
 
 var block1_hidden = true;
 var block2_hidden = true;
@@ -298,10 +299,21 @@ function startGame(){
     score = 0;
     current_string = "";
 
-    $(".timer1").html("13");
-    $(".timer2").html("40");
-    $(".timer3").html("50");
-    $(".timer4").html("60");
+    if(mode == "easy"){
+        $(".timer1").html("33");
+        $(".timer2").html("70");
+        $(".timer3").html("80");
+        $(".timer4").html("100");
+    }
+
+    if(mode == "normal"){
+        $(".timer1").html("13");
+        $(".timer2").html("40");
+        $(".timer3").html("50");
+        $(".timer4").html("60");
+    }
+
+    $(".scoretext").html("0");
 
     $(".block1").css("opacity", 1.0);
     $(".block2").css("opacity", 0.4);
@@ -461,7 +473,12 @@ function count_time(){
 
 $(document).ready(function(){
     $(".problems-container").hide();
-    $(".start-btn").click(function(){
+    $(".btn-easy").click(function(){
+        mode = "easy";
+        startGame();
+    });
+    $(".btn-normal").click(function(){
+        mode = "normal";
         startGame();
     });
     $(document).keydown(function(event){
