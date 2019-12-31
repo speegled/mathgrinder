@@ -181,8 +181,11 @@ p {
 }
 
 .block1-problem {
+    position: relative;
     font-family: "Droid Serif";
-    font-size: 55px;
+    top: 7.5vh;
+    right: 55px;
+    font-size: 110px;
 }
 
 .block2-message {
@@ -190,8 +193,11 @@ p {
 }
 
 .block2-problem {
+    position: relative;
     font-family: "Droid Serif";
-    font-size: 55px;
+    top: 7.5vh;
+    left: 55px;
+    font-size: 110px;
 }
 
 .block3-message {

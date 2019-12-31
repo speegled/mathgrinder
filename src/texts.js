@@ -131,7 +131,7 @@ var long_texts = [
     "I went on a date with this girl, and her floor was just bean bags.",
     "I was about to text you back... but then I hopped up in the drop",
     "Walking with a check, I take lil' shawty out for lunch",
-    "Walk. We don't no talking. Got your man calling. I need better options.",
+    "Walk. We don't do no talking. Got your man calling. I need better options.",
     "They said I wouldn't be nothing; now they always say, \"Congratulations!\"",
     "Every time I'm in the street, I hear, \"Yok Yok Yok Yok\".",
     "Yeah, something inside me's changed - I was so much younger yesterday",

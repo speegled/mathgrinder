@@ -16,7 +16,7 @@ var block2_hidden = true;
 var block3_hidden = true;
 var block4_hidden = true;
 
-var possible_operators = ["+", "-", "x", "/"];
+var possible_operators = ["+", "-", "×", "÷"];
 
 /*literally looked everywhere on the internet
  *could not find a better way to do this*/
@@ -176,10 +176,10 @@ function parseKey(key_press, shift_key){
             else if(current_operator1 == "-" && current_string == f_1 - l_1){
                 correct_ans = true;
             }
-            else if(current_operator1 == "x" && current_string == f_1 * l_1){
+            else if(current_operator1 == "×" && current_string == f_1 * l_1){
                 correct_ans = true;
             }
-            else if(current_operator1 == "/" && current_string == f_1 / l_1){
+            else if(current_operator1 == "÷" && current_string == f_1 / l_1){
                 correct_ans = true;
             }
 
@@ -190,7 +190,7 @@ function parseKey(key_press, shift_key){
                     f_1 = Math.floor((Math.random() * (Math.floor(40 + seconds_played*2)))) + 1;
                     l_1 = Math.floor((Math.random() * (Math.floor(40 + seconds_played*2)))) + 1;
                 }
-                else if(current_operator1 == "x"){
+                else if(current_operator1 == "×"){
                     f_1 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1;
                     l_1 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1;
                 }
@@ -217,10 +217,10 @@ function parseKey(key_press, shift_key){
             else if(current_operator2 == "-" && current_string == f_2 - l_2){
                 correct_ans = true;
             }
-            else if(current_operator2 == "x" && current_string == f_2 * l_2){
+            else if(current_operator2 == "×" && current_string == f_2 * l_2){
                 correct_ans = true;
             }
-            else if(current_operator2 == "/" && current_string == f_2 / l_2){
+            else if(current_operator2 == "÷" && current_string == f_2 / l_2){
                 correct_ans = true;
             }
 
@@ -231,7 +231,7 @@ function parseKey(key_press, shift_key){
                     f_2 = Math.floor((Math.random() * (Math.floor(150 + seconds_played*4)))) + 1;
                     l_2 = Math.floor((Math.random() * (Math.floor(150 + seconds_played*4)))) + 1;
                 }
-                else if(current_operator2 == "x"){
+                else if(current_operator2 == "×"){
                     f_2 = Math.floor((Math.random() * (Math.floor(14 + seconds_played/6)))) + 1;
                     l_2 = Math.floor((Math.random() * (Math.floor(14 + seconds_played/6)))) + 1;
                 }
@@ -334,7 +334,7 @@ function startGame(){
         f_1 = Math.floor((Math.random() * (Math.floor(40 + seconds_played*5)))) + 1;
         l_1 = Math.floor((Math.random() * (Math.floor(40 + seconds_played*5)))) + 1;
     }
-    else if(current_operator1 == "x"){
+    else if(current_operator1 == "×"){
         f_1 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1;
         l_1 = Math.floor((Math.random() * (Math.floor(12 + seconds_played/10)))) + 1;
     }
@@ -355,7 +355,7 @@ function startGame(){
         f_2 = Math.floor((Math.random() * (Math.floor(150 + seconds_played*3)))) + 1;
         l_2 = Math.floor((Math.random() * (Math.floor(150 + seconds_played*3)))) + 1;
     }
-    else if(current_operator2 == "x"){
+    else if(current_operator2 == "×"){
         f_2 = Math.floor((Math.random() * (Math.floor(15 + seconds_played/6)))) + 1;
         l_2 = Math.floor((Math.random() * (Math.floor(15 + seconds_played/6)))) + 1;
     }
