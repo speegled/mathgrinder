@@ -204,6 +204,7 @@ function parseKey(key_press, shift_key){
 
                 var t1 = parseInt($(".timer1").html());
                 t1 += 5;
+                if(mode == "easy") t1 += 3; 
                 t1.toString();
                 $(".timer1").html(t1);
                 score++;
@@ -300,7 +301,7 @@ function startGame(){
     current_string = "";
 
     if(mode == "easy"){
-        $(".timer1").html("33");
+        $(".timer1").html("53");
         $(".timer2").html("70");
         $(".timer3").html("80");
         $(".timer4").html("100");
