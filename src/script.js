@@ -202,6 +202,10 @@ function parseKey(key_press, shift_key){
                 var c1 = f_1.toString() + " " + current_operator1 + " " + l_1.toString();
                 $(".block1-problem").html(c1);
 
+                $(".adn1").show();
+                $(".adn1").fadeIn(750);
+                $(".adn1").fadeOut(750);
+
                 var t1 = parseInt($(".timer1").html());
                 t1 += 5;
                 if(mode == "easy") t1 += 3; 
@@ -244,6 +248,10 @@ function parseKey(key_press, shift_key){
                 var c2 = f_2.toString() + " " + current_operator2 + " " + l_2.toString();
                 $(".block2-problem").html(c2);
 
+                $(".adn2").show();
+                $(".adn2").fadeIn(750);
+                $(".adn2").fadeOut(750);
+
                 var t2 = parseInt($(".timer2").html());
                 t2 += 10;
                 t2.toString();
@@ -257,6 +265,10 @@ function parseKey(key_press, shift_key){
                 var t3 = parseInt($(".timer3").html());
                 t3+= 30;
                 $(".timer3").html(t3);
+
+                $(".adn3").show();
+                $(".adn3").fadeIn(750);
+                $(".adn3").fadeOut(750);
 
                 var index = Math.floor((Math.random() * type_texts.length));
                 var cs = type_texts[index];
@@ -274,6 +286,10 @@ function parseKey(key_press, shift_key){
                 var cs = long_texts[index];
                 $(".block4-problem").html(cs);
                 current_problem4 = index;
+
+                $(".adn4").show();
+                $(".adn4").fadeIn(750);
+                $(".adn4").fadeOut(750);
 
                 var t4 = parseInt($(".timer4").html());
                 t4 += 60;
@@ -300,11 +316,17 @@ function startGame(){
     score = 0;
     current_string = "";
 
+    $(".adn1").hide();
+    $(".adn2").hide();
+    $(".adn3").hide();
+    $(".adn4").hide();
+
     if(mode == "easy"){
         $(".timer1").html("53");
         $(".timer2").html("70");
         $(".timer3").html("80");
         $(".timer4").html("100");
+        $(".adn1").html("+8");
     }
 
     if(mode == "normal"){
@@ -312,6 +334,7 @@ function startGame(){
         $(".timer2").html("40");
         $(".timer3").html("50");
         $(".timer4").html("60");
+        $(".adn1").html("+5");
     }
 
     $(".scoretext").html("0");

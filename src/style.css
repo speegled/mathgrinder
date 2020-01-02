@@ -147,14 +147,11 @@ h2 {
 
 .btn-easy:hover {
     background-color: lightseagreen;
+    color: #eee;
+    font-size: 1.6rem;
 }
 
 .btn-normal:hover {
-    background-color: darkorange;
-    color: #eee;
-}
-
-.btn-hard:hover {
     background-color: darkred;
     color: black;
     font-size: 1.6rem;
@@ -288,4 +285,11 @@ p {
     color: crimson;
     position: relative;
     bottom: 32px;
+}
+
+.addnum {
+    font-size: 23px;
+    position: relative;
+    bottom: 30px;
+    color: wheat;
 }
